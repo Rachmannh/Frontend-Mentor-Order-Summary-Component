@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Red Hat Display";
+    background-image: url("/order-summary-component-main/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+  }
+  
+  main {
+    width: min-content;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  section:first-of-type img {
+    width: 100%;
+  }
+  
+  section:last-of-type {
+    background-color: hsl(0, 0%, 100%);
+    padding: 3rem;
+  }
+  
+  section:last-of-type h1 {
+    margin: 0;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+  }
+  
+  section:last-of-type > p {
+    width: 19rem;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+  }
+  
+  .plan, button {
+    width: 100%;
+  }
+  
+  .plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 1.5rem 0 2rem;
+    border-radius: 0.75rem;
+  }
+  
+  .left {
+    width: max-content;
+    display: flex;
+    align-items: center;
+  }
+  
+  .left img {
+    height: 100%;
+    width: auto;
+    margin-right: 1rem;
+  }
+  
+  .left p {
+    margin: 0.25rem 0 0;
+  }
+  
+  .plan-text {
+    height: min-content;
+    text-align: left;
+  }
+  
+  .plan-text b {
+    color: hsl(223, 47%, 23%);
+  }
+  
+  section:last-of-type a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+  
+  section:last-of-type a:hover {
+    color: hsl(245, 83%, 68%);
+  }
+  
+  button {
+    outline: none;
+    border: none;
+    border-radius: 0.75rem;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(0, 0%, 100%);
+    font-size: 0.85rem;
+    font-family: inherit;
+    padding: 0.85rem;
+    box-shadow: 0 1rem 1rem hsl(245, 75%, 88%);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: hsl(245, 83%, 68%);
+  }
+  
+  section:last-of-type > b {
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  
+  section:last-of-type > b:hover {
+    color: hsl(223, 47%, 23%);
+  }
+  
+  footer {
+    font-size: 0.85rem;
+    margin: 0.5rem 1rem 1rem;
+  }
+
+  footer p {
+    margin: 0;
+  }
+  
+  a {
+    color: inherit;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      background-image: url("https://raw.githubusercontent.com/PresidentTree/Order-Summary-Card/d5d106af8993d3ccf066b39426531f4b3d924f4d/images/pattern-background-mobile.svg");
+    }
+  }
+  
+  @media (max-width: 460px) {
+    main {
+      width: 87vw;
+      margin-top: 6.5vw;
+    }
+    
+    section:last-of-type {
+      padding: 2rem 1.5rem;
+    }
+    
+    section:last-of-type > p {
+      width: 100%;
+    }
+    
+    footer {
+      margin-bottom: 6.5vw;
+    }
+  }
